@@ -12,7 +12,7 @@ gRPC is an open-source, high-performance Remote Procedure Call (RPC) framework d
 
 ![Logo](https://github.com/bnematzadeh/grpc-web-playground/blob/main/5_gRPC-web/grpc-web.png)
 
-I developed a vulnerable gRPC-web application with following vulnerabilities:
+I developed a vulnerable gRPC-Web application with the following vulnerabilities:
 
 - Injection
 - Information Disclosure
