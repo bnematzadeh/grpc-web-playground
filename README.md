@@ -2,10 +2,10 @@
 
 # gRPC Communication Patterns
 
-- Unary
-- Server Streaming
-- Client Streaming
-- Bi-Directional Streaming
+- [Unary](https://github.com/bnematzadeh/grpc-web-playground/tree/main/1_Unary)
+- [Server Streaming](https://github.com/bnematzadeh/grpc-web-playground/tree/main/2_Server%20Streaming)
+- [Client Streaming](https://github.com/bnematzadeh/grpc-web-playground/tree/main/3_Client%20Streaming)
+- [Bi-Directional](https://github.com/bnematzadeh/grpc-web-playground/tree/main/4_Bi-Directional)
 
 # Vulnerable gRPC-Web Application
 
