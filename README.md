@@ -9,6 +9,8 @@
 
 # Vulnerable gRPC-Web Application
 
+![Logo](https://github.com/bnematzadeh/grpc-web-playground/blob/main/5_gRPC-web/grpc-web.png)
+
 I developed a vulnerable gRPC-web application with following vulnerabilities:
 
 - Injection
