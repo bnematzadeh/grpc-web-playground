@@ -1,5 +1,5 @@
 # Vulnerable gRPC-Web Application for Bug Hunters
-gRPC is an open-source, high-performance Remote Procedure Call (RPC) framework developed by Google. It enables efficient communication between client and server applications in a wide range of programming languages by utilizing Protocol Buffers (protobuf) for service definition and message serialization. The main goal of this repo is to learn about the gRPC communitation patterns and hunt for vulnerabilities in gRPC-Web app to improve your hunting skills. 
+gRPC is an open-source, high-performance Remote Procedure Call (RPC) framework developed by Google. It enables efficient communication between client and server applications in a wide range of programming languages by utilizing Protocol Buffers (protobuf) for service definition and message serialization. The main goal of this repo is to learn about the gRPC communication patterns and hunt for vulnerabilities in the gRPC-Web app to improve your hunting skills
 
 # gRPC Communication Patterns
 
