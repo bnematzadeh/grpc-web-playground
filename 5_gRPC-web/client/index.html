@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gRPC-Web Vulnerable Lab</title>
+     <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-dark">
+<div class="container text-center col-3">
+    <h2 style="color: aliceblue;" class="mt-7">gRPC-Web Vulnerable Lab</h2>
+    <input type="text" value="" placeholder="Search Name..." class="input mt-4" id="q">
+    <button id="btn" class="btn bg-success">Search</button><hr>
+    <div id="result" class="text-center" style="color: rgb(250, 249, 247);"></div><hr>
+    <input type="text" value="" placeholder="Add URL..." class="input" id="qu">
+    <button id="btn2" class="btn bg-success">Add URL</button><hr>
+    <div id="result2" class="text-center" style="color: rgb(250, 249, 247);"></div>
+    <input type="text" value="" placeholder="Enter Number" class="input mt-4" id="n">
+    <button id="btn3" class="btn bg-success">Sum</button><hr>
+    <div id="result3" class="text-center" style="color: rgb(250, 249, 247);"></div>
+
+    <footer class="fixed-bottom">
+        <div class="text-center p-1 text-light">
+           <a href="https://x.com/LogicalHunter" style="color: inherit"> <i class="fa fa-twitter-square" style="font-size:30px;color: #000; "></i></i></a>
+            <a href="https://www.linkedin.com/in/borna-nematzadeh/" style="color: inherit"><i class="fa fa-linkedin-square" style="font-size:30px;color: #000;"></i></a>
+            <a href="https://github.com/bnematzadeh" style="color: inherit"><i class="fa fa-github-square" style="font-size:30px;color: #000;"></i></a>
+        </div>
+    </footer>
+</div>
+
+<script src="dist/main.js"></script>
+</body>
+</html>
