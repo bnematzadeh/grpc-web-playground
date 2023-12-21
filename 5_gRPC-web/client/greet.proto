@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package greet;
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SearchUser (SearchUserRequest) returns (SearchUserResponse);
+  rpc GetUsers (UserRequest) returns (UserResponse);
+  rpc AddUrl (UrlRequest) returns (UrlResponse);
+  rpc AddNum (NumRequest) returns (NumResponse);
+}
+
+// The request message containing the user's name.
+message SearchUserRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message SearchUserResponse {
+  string message = 1;
+}
+
+message UserRequest {
+  bool status = 1;
+}
+
+message UserResponse {
+  string name = 1;
+  string email = 2;
+  int32 id = 3;
+  string ssn = 4;
+}
+
+message UrlRequest {
+  string url = 1;
+}
+
+message UrlResponse {
+  string content = 1;
+}
+
+message NumRequest {
+  int32 number = 1;
+}
+
+message NumResponse {
+  int32 result = 1;
+}

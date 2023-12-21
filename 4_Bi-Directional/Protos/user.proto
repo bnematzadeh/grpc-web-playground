@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package user;
+
+
+service UserService {
+    rpc GetUser (UserRequest) returns (UserResponse) {};
+    rpc GetManyUsers (GetManyUsersRequest) returns (stream GetManyUsersResponse) {};
+    rpc LongMessage (stream LongMessageRequest) returns (LongMessageResponse) {};
+    rpc MessageToEveryone (stream MessageToEveryoneRequest) returns (stream MessageToEveryoneResponse) {};
+
+}
+
+message User {
+    string first_name = 1;
+    string last_name = 2;
+    int32 id=3;
+    string email = 4;
+}
+
+message UserRequest {
+    User user = 1;
+}
+
+message UserResponse {
+    User result = 1;
+}
+
+message GetManyUsersRequest {
+    User user = 1;
+}
+
+message GetManyUsersResponse {
+    string result = 1;
+}
+
+message LongMessageRequest {
+    User user = 1;
+}
+
+message LongMessageResponse {
+    string result = 1;
+}
+
+message MessageToEveryoneRequest {
+    User user = 1;
+}
+
+message MessageToEveryoneResponse {
+    string result = 1;
+}
