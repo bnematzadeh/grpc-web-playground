@@ -18,3 +18,32 @@ I developed a vulnerable gRPC-Web application with the following vulnerabilities
 - Information Disclosure
 - SSRF
 - Integer Overflow
+
+# How to Run
+
+Clone the repository:
+```sh
+git clone https://github.com/bnematzadeh/vulnerable-rest-api
+```
+
+Open the `grpc-web` folder in VSCode.
+
+Open the gRPC server file `program.cs`.
+
+Run everything using `F5`.
+
+If you encounter errors like:
+```sh
+grpc-web-playground\5_gRPC-web\server\server.csproj : error NU1101: Unable to find package Grpc.AspNetCore. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages
+grpc-web-playground\5_gRPC-web\server\server.csproj : error NU1101: Unable to find package Grpc.AspNetCore.Server.Reflection. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages
+grpc-web-playground\5_gRPC-web\server\server.csproj : error NU1101: Unable to find package Grpc.AspNetCore.Web. No packages exist with this id in source(s): Microsoft Visual Studio Offline Packages
+```
+
+Open a command prompt and run this command to set the NuGet source for downloading the packages:
+```sh
+dotnet nuget update source nuget.org --source https://api.nuget.org/v3/index.json --proxy "http://proxyserver:port"
+```
+
+Run the project again using `F5`.
+
+For running the client, just open `index.html` file and run it over `Live Server` in VSCode.
